@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import product from "../../assets/data/products";
-import ProductListItem from "@/src/components/ProductListItem";
+import product from "@assets/data/products";
+import ProductListItem from "@components/ProductListItem";
 
 export default function HomeScreen({}) {
   return (

@@ -2,10 +2,11 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "baseUrl": ".", // Bagian langkah dari: Mengatur supaya bisa menerapkan @components, @dll
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@components/*": ["src/components/*"], // Bagian langkah dari: Mengatur supaya bisa menerapkan @components, @dll
+      "@assets/*": ["assets/*"], // Bagian langkah dari: Mengatur supaya bisa menerapkan @components, @dll
+      "@/*": ["src/*"],
     }
   },
   "include": [

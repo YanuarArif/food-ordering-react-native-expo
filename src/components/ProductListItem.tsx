@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native";
-import { Colors } from "../constants/Colors";
-import { Product } from "../types";
+import { Product } from "@/types";
+import { Colors } from "@/constants/Colors";
 
 type ProductListItemProps = {
   product: Product;
