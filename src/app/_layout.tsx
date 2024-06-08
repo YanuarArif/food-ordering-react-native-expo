@@ -5,11 +5,9 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen
-        name="index"
+        name="(tabs)"
         options={{
-          headerShown: true,
-          title: "Home",
-          headerTitleAlign: "center",
+          headerShown: false,
         }}
       />
     </Stack>
