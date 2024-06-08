@@ -5,10 +5,13 @@ import React from "react";
 export default function TabLayout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
+      {/* untuk menghilangkan index redirect menjadi tab */}
+      <Tabs.Screen name="index" options={{ href: null }} />
+
       <Tabs.Screen
-        name="index"
+        name="menu"
         options={{
-          title: "Home",
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <FontAwesome size={20} name="home" color={color} />
           ),
@@ -18,6 +21,7 @@ export default function TabLayout() {
         name="akun"
         options={{
           title: "Akun",
+          headerTitleAlign: "center",
           tabBarIcon: ({ color }) => (
             <MaterialIcons name="account-box" size={20} color={color} />
           ),
