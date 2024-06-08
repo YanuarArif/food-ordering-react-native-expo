@@ -7,7 +7,8 @@ type ProductListItemProps = {
   product: Product;
 };
 
-const defaultPizzaImage =
+// untuk type sefety karena 'image source' bisa return undefined
+export const defaultPizzaImage =
   "'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/food/peperoni.png'";
 
 const ProductListItem = ({ product }: ProductListItemProps) => {
