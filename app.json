@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yanuararif.foodordering"
     },
     "web": {
       "bundler": "metro",
@@ -31,7 +32,15 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "tsconfigPaths": true // Mengatur supaya bisa menerapkan @components, @dll
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a683f202-837a-4942-8edf-58b8da03ab12"
+      }
     }
   }
 }

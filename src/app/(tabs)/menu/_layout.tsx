@@ -1,14 +1,7 @@
-import { View, Text } from "react-native";
-import React from "react";
 import { Stack } from "expo-router";
 
-export default function MenuStack() {
+export default function MenuLayout() {
   return (
-    <Stack>
-      <Stack.Screen
-        name="index"
-        options={{ title: "Menu", headerTitleAlign: "center" }}
-      />
-    </Stack>
+    <Stack screenOptions={{ title: "Menu", headerTitleAlign: "center" }} />
   );
 }
