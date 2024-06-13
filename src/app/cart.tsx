@@ -1,10 +1,18 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text, FlatList } from "react-native";
+import { useCart } from "@/providers/CartProvider";
+import CartListItem from "@components/CartListItem";
 
 const CartScreen = () => {
+  const { items } = useCart();
+
   return (
     <View>
-      <Text>CartScreen</Text>
+      <FlatList
+        data={items}
+        renderItem={({ item }) => <CartListItem cartItem={item} />}
+        contentContainerStyle={{ gap: 10, padding: 10 }}
+      />
+      <Text>Cart item length: {items.length}</Text>
     </View>
   );
 };
